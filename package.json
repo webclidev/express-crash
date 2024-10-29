@@ -27,5 +27,8 @@
   ],
   "author": "webclidev",
   "license": "ISC",
-  "description": "Learn express basics"
+  "description": "Learn express basics",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
