@@ -1,0 +1,31 @@
+{
+  "name": "express-crash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "basic server",
+    "node watch flag",
+    "sendFile method",
+    "statis web server",
+    "json",
+    ".env",
+    "request object",
+    "multiple responses",
+    "route files",
+    "commonjs",
+    "esmodules",
+    "request body",
+    "middleware",
+    "controllers",
+    "ejs template engine",
+    "template partials"
+  ],
+  "author": "webclidev",
+  "license": "ISC",
+  "description": "Learn express basics"
+}
