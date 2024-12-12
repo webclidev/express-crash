@@ -1,7 +1,11 @@
 const PORT = process.env.PORT || 8000;
-const express = require("express");
-const path = require("path");
-const posts = require("./routes/posts");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+import posts from "./routes/posts.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
