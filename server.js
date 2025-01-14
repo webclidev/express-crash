@@ -4,6 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import posts from "./routes/posts.js";
 import logger from "./middleware/logger.js";
+import errorHandler from "./middleware/error.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,5 +23,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
 app.use("/api/posts", posts);
+
+// Error middleware
+app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
