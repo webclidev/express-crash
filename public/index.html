@@ -4,9 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <style>
+      *:focus-visible {
+        outline-offset: 1px;
+      }
+
+      form {
+        max-width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        background-color: #28a745;
+        color: #fff;
+
+        &:hover {
+          background-color: #1f7f35;
+        }
+      }
+    </style>
   </head>
   <body>
     <h1>Om Namah Shivay</h1>
+
+    <form id="add-post-form">
+      <label for="title"> Title: </label>
+      <input type="text" name="title" id="title" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
     <button id="get-posts">Get Posts</button>
     <div id="output"></div>
 
